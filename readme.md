@@ -7,5 +7,6 @@ Get a quick Zone Integration Server (ZIS) server up and running in Docker. A ZIS
 First step is to download the OpenZIS source code in the same directory:
 
 ```
-git clone git@github.com:cwhiteley/OpenZIS.git
+git submodule init
+git submodule update
 ```
