@@ -1,0 +1,3 @@
+[submodule "OpenZIS"]
+	path = OpenZIS
+	url = git@github.com:cwhiteley/OpenZIS.git
