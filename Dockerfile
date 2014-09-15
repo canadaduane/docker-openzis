@@ -10,6 +10,7 @@ RUN a2enmod rewrite && sed -i "s/AllowOverride FileInfo/AllowOverride All/g" /et
 
 ADD OpenZIS /app
 ADD config.ini /app/OpenZIS/
+ADD init_db.sh /
 ADD run.sh /
 
 EXPOSE 80
