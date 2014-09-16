@@ -26,14 +26,13 @@ if [ ! -f /.mysql_database_created ]; then
   echo "CREATE DATABASE $DB_NAME" | mysql -uroot
 
   echo "=> Importing SQL files"
-  pushd /app/OpenZIS/db
+  pushd /app/OpenZIS/db/mysql
   for SQL_FILE in \
       ZISDB.sql \
       update_uk1.sql \
       update.sql \
       events.sql \
-      filters.sql \
-      specs/sif_us_24.sql; do
+      filters.sql; do
     echo "  $SQL_FILE..."
     mysql -uroot "$DB_NAME" < "$SQL_FILE"
   done
