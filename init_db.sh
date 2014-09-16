@@ -32,7 +32,8 @@ if [ ! -f /.mysql_database_created ]; then
       update_uk1.sql \
       update.sql \
       events.sql \
-      filters.sql; do
+      filters.sql \
+      default_groups.sql; do
     echo "  $SQL_FILE..."
     mysql -uroot "$DB_NAME" < "$SQL_FILE"
   done
