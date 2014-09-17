@@ -27,7 +27,7 @@ ADD run.sh /
 ADD default.apache.conf /etc/apache2/sites-enabled/000-default.conf
 ADD default_groups.sql /app/OpenZIS/db/mysql/
 
-VOLUMES ["/var/lib/mysql", "/var/log/apache2", "/var/log/mysql"]
+VOLUME ["/var/lib/mysql", "/var/log/apache2", "/var/log/mysql"]
 
 EXPOSE 80
 
