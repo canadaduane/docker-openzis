@@ -26,6 +26,7 @@ ADD init_db.sh /
 ADD run.sh /
 ADD default.apache.conf /etc/apache2/sites-enabled/000-default.conf
 ADD default_groups.sql /app/OpenZIS/db/mysql/
+ADD default_qa.sql /app/OpenZIS/db/mysql/
 
 VOLUME ["/var/lib/mysql", "/var/log/apache2", "/var/log/mysql"]
 
