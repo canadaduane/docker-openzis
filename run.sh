@@ -50,7 +50,7 @@ fi
 
 /init_db.sh
 
-if [[ "$DB_HOST" == "127.0.0.1" ]]; then
+if [[ "$DB_HOST" != "127.0.0.1" ]]; then
   rm /etc/supervisor/conf.d/supervisord-mysqld.conf
 fi
 
